@@ -8,7 +8,7 @@ const getBetween = (props: Props) => {
   const { value, startChar, endChar } = props;
   const regex = new RegExp(`${startChar}(.*?)${endChar}`);
   const match = value.match(regex);
-  return match ? match[1]?.trim() : '';
+  return match ? match[1]?.trim() : ''
 };
 
 export default getBetween;
