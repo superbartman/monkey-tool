@@ -4,14 +4,19 @@
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/superbartman/monkey-tool.git"
+  },
+  "author": "bartman",
   "scripts": {
     "build": "webpack --config webpack.js",
     "format": "prettier --write ./src",
     "build:swc": "rm -rf dist && swc src -d dist",
     "lint": "eslint --ext ts src",
-    "jest": "jest tests"
+    "jest": "jest tests",
+    "prepublish": "pnpm build && tsc"
   },
   "devDependencies": {
     "@swc/cli": "^0.1.59",
