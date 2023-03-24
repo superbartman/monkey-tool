@@ -5,8 +5,12 @@ interface Props {
   maxDecimal?: number;
 }
 
-const toLocaleString = (props: Props): string => {
-  const { locales = 'en-US', value, minDecimal = 2, maxDecimal = 2 } = props;
+const toLocaleString = ({
+  locales = 'en-US',
+  value,
+  minDecimal = 2,
+  maxDecimal = 2,
+}: Props): string => {
   return Number(value).toLocaleString(locales, {
     minimumFractionDigits: minDecimal,
     maximumFractionDigits: maxDecimal,
