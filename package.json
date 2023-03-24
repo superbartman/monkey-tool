@@ -36,17 +36,14 @@
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.9.3"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*.{js,ts}": [
       "pnpm lint",
       "pnpm jest",
       "prettier --write"
-    ]
+    ],
+    "*.ts": "eslint --cache --fix",
+    "*./src": "prettier --write"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.com"
