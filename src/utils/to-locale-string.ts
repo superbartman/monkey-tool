@@ -13,4 +13,4 @@ const toLocaleString = (props: Props): string => {
   });
 };
 
-export default toLocaleString
+export default toLocaleString;
