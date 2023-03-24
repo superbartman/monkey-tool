@@ -1,2 +1,3 @@
 import toLocaleString from './utils/to-locale-string';
-export { toLocaleString };
+import getBetween from './utils/get-between';
+export { toLocaleString, getBetween };

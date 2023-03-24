@@ -3,5 +3,10 @@
 .gitignore
 pnpm-lock.lock
 .prettierrc.js
+jest.config.js
 webpack.js
 tsconfig.json
+/tests
+.eslintignore
+.eslintrc.json
+.swcrc
